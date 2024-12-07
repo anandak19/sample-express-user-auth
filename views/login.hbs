@@ -1,0 +1,15 @@
+<div class="container-fluid w-100 d-flex justify-content-center align-items-center login-wrapper">
+    <div class="main-card container p-5 mt-5 h-50 w-50 rounded">
+        <h1 class="text-center">Login</h1>
+        <form action="/login/submited" method="POST" class="d-flex flex-column gap-3 mt-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="userName" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+            <span class="text-danger">{{alertMessage}}</span>
+            <button type="submit" class="btn login-btn mt-2 text-white fs-5 fw-bold"> Login</button>
+        </form>
+    </div>
+</div>
